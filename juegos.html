@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Fuentes */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons');
+
+/* Paleta de colores */
+:root {
+  --mdc-theme-primary: #3f51b5;
+  --mdc-theme-secondary: #ff4081;
+  --mdc-theme-background: #f5f5f5;
+}
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  background-color: var(--mdc-theme-primary);
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Contenido */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 32px;
+  background-color: var(--mdc-theme-background);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card h2 {
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card p {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+}
+
+.card button {
+  width: 100%;
+  height: 10%;
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--mdc-theme-secondary);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #c51162;
+}
+    </style>
+	<title>Juegos</title>
+</head>
+<body>
+      <main>
+        <div class="card">
+          <img src="juegosdecarros.jpg" alt="Juegos de Carros">
+          <h2>Juegos de Carros</h2>
+          <p>Paque te lances por una montaña rey XD.</p>
+          <button>Ir al juego</button>
+        </div>
+        <div class="card">
+          <img src="animaldrim.jpg" alt="Animaldrim">
+          <h2>Animaldrim</h2>
+          <p>no se mano estoy probando.</p>
+          <button>Ir al juego</button>
+        </div>
+        <div class="card">
+          <img src="capitallondres.jpg" alt="Capital Londres">
+          <h2>Capital Londres</h2>
+          <p>sexo.</p>
+          <button>Ir al juego</button>
+        </div>
+        <div class="card">
+          <img src="finalfantasiaa.jpg" alt="Final Fantasiaa">
+          <h2>Final Fantasiaa</h2>
+          <p>otro en el que no se que poner de descripcion.</p>
+          <button>Ir al juego</button>
+        </div>
+        <div class="card">
+          <img src="subwayrest.jpg" alt="Subway Rest">
+          <h2>Subway Rest</h2>
+          <p>kike subway surf pero no jaja.</p>
+          <button>Ir al juego</button>
+        </div>
+      </main>
+      <script src="juegos.js"></script>
+	<ul>
+		<li><a href="#">Juegos de carros</a></li>
+		<li><a href="#">Animaldrim</a></li>
+		<li><a href="#">Capitallondres</a></li>
+		<li><a href="#">Finalfantasiaa</a></li>
+		<li><a href="#">Subwayrest</a></li>
+	</ul>
+</body>
+</html>
